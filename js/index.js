@@ -21,4 +21,3 @@ function showPosition(position) {
   "<br>Longitude: " + position.coords.longitude + "<br>Url: " + geolocalizacion;
 }
 window.onload = getLocation;
-https://www.openstreetmap.org/#map=11/-33.4595/-70.7403
