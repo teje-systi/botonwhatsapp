@@ -14,9 +14,11 @@ function getLocation() {
 
 function showPosition(position) {
 
-  var geolocalizacion = "https://wa.me/56984431800?text=Emergencia,%20en%20https://www.openstreetmap.org/?mlat="+ position.coords.latitude +"&&mlon="+ position.coords.longitude + "#map=17/"+ position.coords.latitude +"/"+ position.coords.longitude;
+  //var geolocalizacion = "https://wa.me/56984431800?text=Emergencia,%20en%20https://www.openstreetmap.org/?mlat="+ position.coords.latitude +"&&mlon="+ position.coords.longitude + "#map=17/"+ position.coords.latitude +"/"+ position.coords.longitude;
+  var geolocalizacion = "https://wa.me/56984431800?text=Emergencia,%20en%20https://www.openstreetmap.org/#map=17/"+ position.coords.latitude +"/"+ position.coords.longitude;
   document.getElementById("miUbicacion").setAttribute("href", geolocalizacion);
     x.innerHTML = "Latitude: " + position.coords.latitude + 
   "<br>Longitude: " + position.coords.longitude + "<br>Url: " + geolocalizacion;
 }
 window.onload = getLocation;
+https://www.openstreetmap.org/#map=11/-33.4595/-70.7403
