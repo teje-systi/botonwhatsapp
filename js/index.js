@@ -15,7 +15,9 @@ function getLocation() {
 function showPosition(position) {
 
   //var geolocalizacion = "https://wa.me/56984431800?text=Emergencia,%20en%20https://www.openstreetmap.org/?mlat="+ position.coords.latitude +"&&mlon="+ position.coords.longitude + "#map=17/"+ position.coords.latitude +"/"+ position.coords.longitude;
-  var geolocalizacion = "https://wa.me/56984431800?text=Emergencia,%20en%20https://www.openstreetmap.org/#map=17/"+ position.coords.latitude +"/"+ position.coords.longitude;
+  //var geolocalizacion = "https://wa.me/56984431800?text=Emergencia,%20en%20https://www.openstreetmap.org/#map=17/"+ position.coords.latitude +"/"+ position.coords.longitude;
+  var geolocalizacion = "https://wa.me/56984431800?text=Me%20comunico%20desde%20TuWeb,%20tengouna%20emergencia%20en%20coordenadas%20Latitude:%20" + position.coords.latitude + ",%20Longitude:%20" + position.coords.longitude;
+  
   document.getElementById("miUbicacion").setAttribute("href", geolocalizacion);
     x.innerHTML = "Latitude: " + position.coords.latitude + 
   "<br>Longitude: " + position.coords.longitude + "<br>Url: " + geolocalizacion;
